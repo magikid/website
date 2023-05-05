@@ -1,3 +1,16 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://www.christopherjones.us/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Chris W Jones'
+theme = 'papermod'
+
+[params.homeInfoParams]
+Title = "Chris W Jones"
+Content = "Hobbiest Programmer"
+
+[[params.socialIcons]]
+name = "Dustbuster Club"
+url = "https://dustbuster.club/@odo"
+
+[[params.socialIcons]]
+name = "GitHub"
+url = "https://www.github.com/magikid"
