@@ -1,9 +1,6 @@
-set dotenv-load := true
-
 deploy:
     hugo --gc --minify --cleanDestinationDir --environment production
-    hugo deploy
-    s3cmd setacl s3://cwj-website/ --acl-public --recursive
+    rsync -avz --delete public/ zoidberg.vpn.hilandchris.com:/var/www/christopherjones.us/
 
 new-post postname:
     hugo new content/posts/{{postname}}.md
